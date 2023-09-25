@@ -6,8 +6,15 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:53:56 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/20 18:53:57 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/09/25 11:56:17 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+int	ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		c = c - 32;
+	return (c);
+}
