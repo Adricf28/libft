@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:54:09 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/25 13:16:18 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/09/25 14:12:39 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,9 @@ char	*ft_strchr(const char *str, int c)
 	int	i;
 
 	i = 0;
-	while (str[i])
-	{
-		if (str[i] == c)
-			return ((char *)str + i);
+	while (str[i] && str[i] != c)
 		i++;
-	}
-	if (!c && str[i] == '\0')
+	if (str[i] == c)
 		return ((char *)str + i);
 	return (NULL);
 }

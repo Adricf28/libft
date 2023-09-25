@@ -6,24 +6,23 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:53:50 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/22 22:59:58 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/09/25 18:29:28 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	destLength;
+	size_t	deslen;
 
 	i = 0;
-	destLength = ft_strlen(dest);
-	if (!destLength)
-		return (size);
-	while (src[i] && i + 1 < size)
-		dest[destLength++] = src[i++];
-
-	dest[destLength] = '\0';
-	return (size);
+	deslen = ft_strlen(dest);
+	if (size <= deslen || !size)
+		return (ft_strlen((char *)src) + size);
+	while (src[i] && deslen < size - 1)
+		dest[deslen++] = src[i++];
+	dest[deslen] = '\0';
+	return (deslen + ft_strlen((char *)src));
 }

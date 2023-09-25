@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:53:26 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/21 19:26:34 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/09/25 17:56:17 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,22 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
+	char	*temp;
 	size_t	i;
 
 	i = -1;
+	temp = (char *)dest;
 	if (!dest && !src)
-		return (0);
-	if (dest < src)
-		ft_memcpy(dest, src, n);
+		return (NULL);
+	if (temp > (char*)src)
+	{
+		while (n-- > 0)
+			temp[n] = ((char *)src)[n];
+	}
 	else
 	{
 		while (++i < n)
-			((char *)dest)[i] = ((char *)src)[i];
+			temp[i] = ((char *)src)[i];
 	}
 	return (dest);
 }
