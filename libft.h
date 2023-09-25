@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:26:49 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/25 14:37:14 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/09/25 19:16:04 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <bsd/string.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
