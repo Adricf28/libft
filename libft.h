@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:26:49 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/25 19:16:04 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/09/26 19:22:17 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,10 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
+int	ft_strncmp(const char *str, const char *str2, size_t n);
+void	*ft_memchr(const void *str, int c, size_t n);
+int	ft_memcmp(const void *str, const void *str2, size_t n);
+char	*ft_strnstr(const char *big, const char *lit, size_t len);
+int	ft_atoi(const char *str);
 
 #endif
