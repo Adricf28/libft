@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:55:41 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/26 19:20:45 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/11/02 17:12:55 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ char	*ft_strnstr(const char *big, const char *lit, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (len == 0)
+	if (*lit == '\0')
 		return ((char *)big);
-	while (big[i] && i < len)
+	while (i < len && big[i])
 	{
 		j = 0;
-		while (big[i + j] && big[i + j] == lit[j])
+		while (big[i + j] && big[i + j] == lit[j] && (i + j) < len)
 			j++;
 		if (!lit[j])
 			return ((char *)big + i);
