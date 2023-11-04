@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:55:45 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/26 20:02:43 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/11/04 20:59:16 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_atoi(const char *str)
 	int	sign;
 	int	res;
 	int	boolean;
-	
+
 	i = 0;
 	sign = 1;
 	res = 0;

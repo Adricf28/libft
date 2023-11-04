@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:53:26 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/09/25 17:56:17 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/11/04 21:28:34 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	temp = (char *)dest;
 	if (!dest && !src)
 		return (NULL);
-	if (temp > (char*)src)
+	if (temp > (char *)src)
 	{
 		while (n-- > 0)
 			temp[n] = ((char *)src)[n];
