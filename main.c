@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 19:04:31 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/11/04 21:09:00 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/11/04 22:00:45 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 int	main(void)
 {
-	ft_strdup("hola");
-	printf("\n");
+	printf("Resultado: %s\n", ft_substr("", 1, 1));
 }

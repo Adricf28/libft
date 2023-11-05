@@ -6,7 +6,7 @@
 /*   By: adcarmon <adcarmon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:26:49 by adcarmon          #+#    #+#             */
-/*   Updated: 2023/11/04 21:03:05 by adcarmon         ###   ########.fr       */
+/*   Updated: 2023/11/04 21:40:34 by adcarmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,6 @@ char		*ft_strnstr(const char *big, const char *lit, size_t len);
 int		ft_atoi(const char *str);
 void		*ft_calloc(size_t nitems, size_t size);
 char		*ft_strdup(const char *str);
+char		*ft_substr(char const *str, unsigned int start, size_t len);
 
 #endif
